@@ -2,6 +2,7 @@ extends CharacterBody3D
 
 @export var speed = 5.0
 @export var damage = 100
+@export var sound_volume = -15
 
 var player = null
 var is_chasing = false
@@ -28,6 +29,7 @@ func _ready():
 	var sound_stream = load(sound_path)
 	if sound_stream:
 		sound_2d.stream = sound_stream
+		sound_2d.volume_db = sound_volume
 		print("Scary sound loaded")
 	else:
 		print("Sound file not found: ", sound_path)

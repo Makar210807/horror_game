@@ -9,6 +9,11 @@ var tween: Tween
 var hint_label: Label3D
 var quest_ui = null
 
+# Защита от спама
+var can_interact = true
+var interact_cooldown = 1.0
+var is_eaten = false
+
 func _ready():
 	print("Food ready: ", food_name)
 	
@@ -25,21 +30,37 @@ func _ready():
 		add_child(eat_sound)
 
 func _process(delta):
-	if hint_label:
-		hint_label.visible = QuestData.washed and not QuestData.eaten
+	if hint_label and not is_eaten:
+		hint_label.visible = QuestData.washed and not QuestData.eaten and can_interact
 
-func can_interact():
-	return QuestData.washed and not QuestData.eaten
+func can_interact_condition():
+	return QuestData.washed and not QuestData.eaten and can_interact and not is_eaten
 
 func interact():
-	if not can_interact():
+	if not can_interact:
+		return
+	
+	if is_eaten:
+		return
+	
+	if not can_interact_condition():
+		can_interact = false
 		if not QuestData.washed:
 			SubtitleLayer.show_subtitle("Сначала нужно умыться!", 2.0)
 		else:
 			SubtitleLayer.show_subtitle("Я уже поел.", 1.5)
+		await get_tree().create_timer(interact_cooldown).timeout
+		can_interact = true
 		return
 	
+	can_interact = false
+	is_eaten = true
+	
 	print("interact() called on: ", food_name)
+	
+	# Скрываем подсказку сразу
+	if hint_label:
+		hint_label.visible = false
 	
 	await create_fade_effect()
 	

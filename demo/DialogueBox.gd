@@ -33,7 +33,6 @@ func start_dialogue(lines: Array):
 	current_lines = lines
 	current_line_index = 0
 	
-	await get_tree().create_timer(5.0).timeout
 	
 	# Показываем затемнение и панель с анимацией
 	if color_rect:

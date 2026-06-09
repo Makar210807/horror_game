@@ -30,7 +30,7 @@ public:
     void resume_chasing();
 
 private:
-    double speed = 3.0;
+    double speed = 8.1;
     float health = 100.0;
     double chase_range = 10.0;
     double stop_distance = 1.5;

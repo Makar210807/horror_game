@@ -32,11 +32,11 @@ func start_thoughts():
 	SubtitleLayer.show_subtitle("Фух...", 1.5)
 	await get_tree().create_timer(2.0).timeout
 	
-	SubtitleLayer.show_subtitle("Это было всего лишь сон.", 2.5)
+	SubtitleLayer.show_subtitle("Это был всего лишь сон.", 2.5)
 	await get_tree().create_timer(3.0).timeout
 	
 	SubtitleLayer.show_subtitle("Нужно прекратить пить чертовы энергетики...", 3.0)
-	await get_tree().create_timer(3.5).timeout
+	await get_tree().create_timer(2.5).timeout
 	
 	# Затемнение
 	await fade_to_black()

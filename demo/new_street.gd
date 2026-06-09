@@ -42,7 +42,6 @@ func _ready():
 	if QuestData.quest_step == 2:
 		if quest_ui:
 			quest_ui.update_quest("Вернуться домой")
-		SubtitleLayer.show_subtitle("Теперь можно идти домой.", 2.5)
 	elif QuestData.needs_another_energy:
 		if quest_ui:
 			quest_ui.update_quest("Купить энергетик")

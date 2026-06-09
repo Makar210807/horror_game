@@ -10,6 +10,10 @@ var is_used = false
 var hint_label: Label3D
 var quest_ui = null
 
+# Защита от спама
+var can_interact = true
+var interact_cooldown = 1.0
+
 func _ready():
 	print("Bath ready: ", action_name)
 	
@@ -25,19 +29,30 @@ func _ready():
 
 func _process(delta):
 	if hint_label:
-		hint_label.visible = not QuestData.washed and not is_used
+		hint_label.visible = not QuestData.washed and not is_used and can_interact
 
-func can_interact():
-	return not QuestData.washed and not is_used
+func can_interact_condition():
+	return not QuestData.washed and not is_used and can_interact
 
 func interact():
-	if is_used:
-		SubtitleLayer.show_subtitle("Я уже умывался сегодня.", 1.5)
+	if not can_interact:
 		return
 	
-	if not can_interact():
-		SubtitleLayer.show_subtitle("Я уже умылся.", 1.5)
+	if is_used:
+		can_interact = false
+		SubtitleLayer.show_subtitle("Я уже умывался сегодня.", 1.5)
+		await get_tree().create_timer(interact_cooldown).timeout
+		can_interact = true
 		return
+	
+	if not can_interact_condition():
+		can_interact = false
+		SubtitleLayer.show_subtitle("Я уже умылся.", 1.5)
+		await get_tree().create_timer(interact_cooldown).timeout
+		can_interact = true
+		return
+	
+	can_interact = false
 	
 	print("interact() called on: ", action_name)
 	
@@ -70,6 +85,9 @@ func interact():
 		house.on_player_washed()
 	
 	await fade_back()
+	
+	# Восстанавливаем возможность взаимодействия
+	can_interact = true
 	print("Bath used")
 
 func create_fade_effect():

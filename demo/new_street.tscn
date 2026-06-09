@@ -491,7 +491,7 @@ script = ExtResource("1_xy4rd")
 environment = SubResource("Environment_y8nr3")
 
 [node name="Enemy" type="Enemy" parent="." unique_id=795373273]
-transform = Transform3D(0.9420069, 0, 0.33537725, 0, 1, 0, -0.33537725, 0, 0.9420069, -118.77363, 2.816732, -89.43305)
+transform = Transform3D(0.9172778, 0, -0.39804316, 0, 1, 0, 0.39804316, 0, 0.9172778, -123.20326, 2.816714, -87.366455)
 script = ExtResource("2_wlu3x")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy" unique_id=1879234875]
@@ -640,7 +640,7 @@ bones/19/parent = 0
 bones/19/rest = Transform3D(0.99994546, -0.010372957, -0.0011720118, -0.010426382, -0.98691654, -0.16089365, 0.00051226525, 0.16089721, -0.9869703, 0.2335563, 0.1344707, 0.02105174)
 bones/19/enabled = true
 bones/19/position = Vector3(0.2335563, 0.1344707, 0.02105174)
-bones/19/rotation = Quaternion(0.99672383, -0.0052169263, -0.00016547952, 0.08071219)
+bones/19/rotation = Quaternion(0.9967239, -0.005216927, -0.0001654795, 0.0807122)
 bones/19/scale = Vector3(0.99999994, 0.9999999, 0.9999992)
 bones/20/name = "shin.L"
 bones/20/parent = 19
@@ -675,7 +675,7 @@ bones/24/parent = 0
 bones/24/rest = Transform3D(0.99994546, -0.010372957, -0.0011720118, -0.010426382, -0.98691654, -0.16089365, 0.0005122653, 0.16089721, -0.9869703, -0.23710911, 0.13989267, 0.034058228)
 bones/24/enabled = true
 bones/24/position = Vector3(-0.23710911, 0.13989267, 0.034058228)
-bones/24/rotation = Quaternion(0.9967239, -0.0052169273, -0.00016547955, 0.08071221)
+bones/24/rotation = Quaternion(0.9967239, -0.005216927, -0.0001654795, 0.0807122)
 bones/24/scale = Vector3(0.99999994, 0.9999999, 0.9999992)
 bones/25/name = "shin.R"
 bones/25/parent = 24
@@ -716,6 +716,7 @@ libraries/ = SubResource("AnimationLibrary_pqrtk")
 
 [node name="ScarySound2D" type="AudioStreamPlayer2D" parent="Enemy" unique_id=141286589]
 stream = ExtResource("4_i0vdk")
+volume_db = -34.019
 
 [node name="house" parent="." unique_id=39075639 instance=ExtResource("1_7w8al")]
 transform = Transform3D(-30, 0, -2.6226833e-06, 0, 30, 0, 2.6226833e-06, 0, -30, 28.503807, 0.5000038, -13.926838)
@@ -2181,7 +2182,7 @@ stream = ExtResource("23_wj26k")
 autoplay = true
 
 [node name="PlayerController" parent="." unique_id=1174027042 instance=ExtResource("22_gffbn")]
-transform = Transform3D(0.99999857, 0, 0, 0, 1, 0, 0, 0, 0.99999857, -118.61471, 1.4010001, -88.98668)
+transform = Transform3D(0.99999857, 0, 0, 0, 1, 0, 0, 0, 0.99999857, -123.840164, 1.4010001, -85.898735)
 floor_max_angle = 1.0
 floor_snap_length = 1.0
 

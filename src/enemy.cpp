@@ -22,7 +22,7 @@ void Enemy::_bind_methods() {
 }
 
 Enemy::Enemy() {
-    speed = 3.0;
+    speed = 8.1;
     health = 100.0;
     stop_distance = 1.5;
     player = nullptr;

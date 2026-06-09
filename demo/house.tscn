@@ -632,7 +632,10 @@ use_collision = true
 size = Vector3(0.97180176, 1.9810181, 0.26611328)
 
 [node name="PlayerController" parent="." unique_id=1174027042 instance=ExtResource("13_fl8vv")]
-transform = Transform3D(0.99999857, 0, 0, 0, 1, 0, 0, 0, 0.99999857, -3.6282277, 0.7516281, 1.8383467)
+transform = Transform3D(0.99999857, 0, 0, 0, 1, 0, 0, 0, 0.99999857, -7.360608, 0.75210226, 3.1851008)
+velocity = Vector3(0, 0, 5)
+floor_max_angle = 1.0
+floor_snap_length = 1.0
 
 [node name="FootstepSound" type="AudioStreamPlayer3D" parent="PlayerController" unique_id=1328213004]
 transform = Transform3D(1.0000014, 0, 0, 0, 1, 0, 0, 0, 1.0000014, 0, 0.1929285, 0)

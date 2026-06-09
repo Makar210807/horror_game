@@ -11,6 +11,11 @@ var current_duration = 0.0
 var current_char_index = 0
 var type_speed = 0.05
 
+# Для защиты от спама
+var last_text = ""
+var last_text_time = 0
+var text_cooldown = 0.5  # Задержка между одинаковыми текстами
+
 func _ready():
 	subtitle_label.visible = false
 	subtitle_label.bbcode_enabled = true
@@ -21,7 +26,17 @@ func _input(event):
 		skip_current()
 
 func show_subtitle(text: String, duration: float = 3.0):
-	print("show_subtitle called: ", text)
+	# Защита от спама одинаковыми сообщениями
+	var current_time = Time.get_ticks_msec() / 1000.0
+	
+	if text == last_text and (current_time - last_text_time) < text_cooldown:
+		print("Duplicate subtitle blocked: ", text)
+		return
+	
+	last_text = text
+	last_text_time = current_time
+	
+	# Добавляем в очередь
 	subtitle_queue.append({"text": text, "duration": duration})
 	if not is_showing:
 		_show_next()

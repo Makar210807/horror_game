@@ -27,7 +27,9 @@ func start_sequence():
 	QuestData.has_energy_drink = false
 	QuestData.has_paid = false
 	
-	# Спавн У УНИВЕРСИТЕТА
+	# Убираем фразу "Нужно сходить в магазин" отсюда!
+	# Она будет выводиться только на улице
+	
 	QuestData.use_spawn = true
 	QuestData.spawn_position = Vector3(-209.341, 1.999, -86.24)
 	
@@ -37,8 +39,10 @@ func start_sequence():
 		quest_ui.visible = true
 		quest_ui.update_quest("Купить энергетик")
 	
-	SubtitleLayer.show_subtitle("Нужно сходить в магазин.", 2.5)
-	await get_tree().create_timer(3.0).timeout
+	# Убираем эту строку, чтобы фраза не выводилась здесь
+	# SubtitleLayer.show_subtitle("Нужно сходить в магазин.", 2.5)
+	
+	await get_tree().create_timer(1.0).timeout
 	get_tree().change_scene_to_file("res://new_street.tscn")
 
 func fade_to_black():
@@ -55,7 +59,7 @@ func fade_to_black():
 
 func fade_from_black():
 	var tween = create_tween()
-	tween.tween_property(fade_rect, "color", Color(0, 0, 0, 0), 1.0)
+	tween.tween_property(fade_rect, "color", Color(0, 0, 0, 0), 0.5)
 	await tween.finished
 	fade_rect.queue_free()
 

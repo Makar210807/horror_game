@@ -1,13 +1,20 @@
 extends Area3D
 
+var can_trigger = true
+var trigger_cooldown = 1.0
+
 func _ready():
 	connect("body_entered", Callable(self, "_on_body_entered"))
 
 func _on_body_entered(body):
+	if not can_trigger:
+		return
+	
 	if body.name == "PlayerController":
 		print("=== SHOP EXIT TRIGGERED ===")
 		
 		if QuestData.has_paid:
+			can_trigger = false
 			print("Paid, exiting shop")
 			
 			# Спавн у магазина
@@ -26,5 +33,8 @@ func _on_body_entered(body):
 			await get_tree().create_timer(1.5).timeout
 			get_tree().change_scene_to_file("res://new_street.tscn")
 		else:
+			can_trigger = false
 			print("Cannot exit - not paid")
 			SubtitleLayer.show_subtitle("Сначала нужно оплатить покупку!", 2.0)
+			await get_tree().create_timer(trigger_cooldown).timeout
+			can_trigger = true
