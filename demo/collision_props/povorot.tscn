@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b1d2qomsnlqno"]
+
+[ext_resource type="PackedScene" uid="uid://b673vkbjw0r4e" path="res://props/buildings/exports/SideWalkCorner.glb" id="1_iqeo0"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v32uq"]
+height = 3.5463867
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iqeo0"]
+size = Vector3(2.9619446, 0.8850403, 3.0021667)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=370000604]
+
+[node name="SideWalkCorner2" parent="." unique_id=1779726667 instance=ExtResource("1_iqeo0")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1455493612]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.8350992, -0.17236698, 1.5883908)
+shape = SubResource("CapsuleShape3D_v32uq")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=783393483]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 1.5221887, -0.13898104, 2.867105)
+shape = SubResource("CapsuleShape3D_v32uq")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=901619859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4663544, -0.05747986, 1.5202789)
+shape = SubResource("BoxShape3D_iqeo0")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://caqbntln4uj3l"]
+
+[ext_resource type="PackedScene" uid="uid://30gkytq68e7s" path="res://props/soviet_concrete_fence/scene.gltf" id="1_rg46c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y2tat"]
+size = Vector3(6.4520416, 6.076172, 0.6279297)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1908344455]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1937139929 instance=ExtResource("1_rg46c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.040299654, 0, 0.22238803)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=99768025]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.032218933, 2.538086, 0.21728516)
+shape = SubResource("BoxShape3D_y2tat")

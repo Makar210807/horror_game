@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://crev2inf1u6xe"]
+
+[ext_resource type="Texture2D" uid="uid://c46cmonu8147a" path="res://menu_img.png" id="1_06t4h"]
+[ext_resource type="AudioStream" uid="uid://dvbg0qpn5g8h7" path="res://Fridge.mp3" id="2_7vrkn"]
+
+[node name="Control" type="MenuController" unique_id=728701359]
+anchors_preset = -1
+anchor_right = 4.487
+anchor_bottom = 4.454
+offset_right = 0.16003418
+offset_bottom = 0.040039063
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuController" type="MenuController" parent="." unique_id=1388514882]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="MenuController" unique_id=1553151851]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.22000001
+anchor_bottom = 0.21400002
+offset_top = -3.0
+offset_right = 1515.0095
+offset_bottom = 1145.5829
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.21, 0.21)
+texture = ExtResource("1_06t4h")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuController" unique_id=777276363]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4637883
+anchor_top = 0.4527596
+anchor_right = 0.5337744
+anchor_bottom = 0.54724044
+offset_left = 90.05345
+offset_top = 52.669617
+offset_right = 184.25403
+offset_bottom = 149.89038
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="PlayButton" type="Button" parent="MenuController/VBoxContainer" unique_id=18011147]
+layout_mode = 2
+text = "Играть"
+flat = true
+
+[node name="OptionsButton" type="Button" parent="MenuController/VBoxContainer" unique_id=1698415936]
+layout_mode = 2
+text = "Настройки"
+flat = true
+
+[node name="QuitButton" type="Button" parent="MenuController/VBoxContainer" unique_id=1041946189]
+layout_mode = 2
+text = "Выход"
+flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=613854989]
+stream = ExtResource("2_7vrkn")
+autoplay = true

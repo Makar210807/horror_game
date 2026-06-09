@@ -1,0 +1,8 @@
+Model Information:
+* title:	Soviet Residential Building
+* source:	https://sketchfab.com/3d-models/soviet-residential-building-3d7f73fcabc044579c477a31ddf4a5b9
+* author:	Full_Metal_Dipshit (https://sketchfab.com/Potato_Pizza)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

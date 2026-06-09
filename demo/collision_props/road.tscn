@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bms3yjs0xqcev"]
+
+[ext_resource type="PackedScene" uid="uid://w2tvqv1k4lv2" path="res://props/road.tscn" id="1_b5hw6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rlwg8"]
+size = Vector3(29.22995, 1.652771, 100.03668)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1575300478]
+
+[node name="road" parent="." unique_id=746021808 instance=ExtResource("1_b5hw6")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1534124068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7141442, -0.23740864, 0.09854126)
+shape = SubResource("BoxShape3D_rlwg8")

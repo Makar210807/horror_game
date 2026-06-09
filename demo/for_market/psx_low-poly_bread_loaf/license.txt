@@ -1,0 +1,11 @@
+Model Information:
+* title:	PSX Low-Poly Bread Loaf
+* source:	https://sketchfab.com/3d-models/psx-low-poly-bread-loaf-5a2e918c85cc4df9a91841a83994539a
+* author:	PSX Game Assets (https://sketchfab.com/PSXGameAssets)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PSX Low-Poly Bread Loaf" (https://sketchfab.com/3d-models/psx-low-poly-bread-loaf-5a2e918c85cc4df9a91841a83994539a) by PSX Game Assets (https://sketchfab.com/PSXGameAssets) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

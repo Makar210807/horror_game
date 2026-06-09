@@ -1,0 +1,11 @@
+Model Information:
+* title:	PSX Low-Poly Soup
+* source:	https://sketchfab.com/3d-models/psx-low-poly-soup-07d753c9e2be4b8fb1fb71175c0278b5
+* author:	PSX Game Assets (https://sketchfab.com/PSXGameAssets)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PSX Low-Poly Soup" (https://sketchfab.com/3d-models/psx-low-poly-soup-07d753c9e2be4b8fb1fb71175c0278b5) by PSX Game Assets (https://sketchfab.com/PSXGameAssets) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

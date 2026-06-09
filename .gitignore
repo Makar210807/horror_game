@@ -1,0 +1,36 @@
+# Godot generated files
+.godot/
+.import/
+*.gen.*
+extension_api.json
+gdextension_interface.h
+logs/
+__pycache__/
+*.pyc
+
+# Build output
+bin/
+*.dll
+*.lib
+*.o
+*.obj
+*.exe
+.scons_env.json
+.sconsign*.dblite
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+.godot/
+*.pck
+*.exe
+build/
+*.rar
+*.zip
+demo/props/*.png
+demo/props/*.jpg

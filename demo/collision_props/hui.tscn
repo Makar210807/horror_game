@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://djysp7f3v0hk8"]
+
+[ext_resource type="PackedScene" uid="uid://c0bqq4t43ea1h" path="res://props/soviet_panel_house_built_in_the_1970s/scene.gltf" id="1_jb06l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xjj4b"]
+size = Vector3(0.9946289, 1.173584, 10.728867)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=253246336]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1280810246 instance=ExtResource("1_jb06l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70109355, 1.1920929e-07, 0.0046331882)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=27101775]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0.053710938, 11.477051, 15.912018)
+shape = SubResource("BoxShape3D_xjj4b")

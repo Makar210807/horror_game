@@ -1,0 +1,11 @@
+Model Information:
+* title:	Convenience Store prop
+* source:	https://sketchfab.com/3d-models/convenience-store-prop-c0ec7be449274046a72e7453fc0b0731
+* author:	Khoa Nguyen (https://sketchfab.com/ngdkh)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Convenience Store prop" (https://sketchfab.com/3d-models/convenience-store-prop-c0ec7be449274046a72e7453fc0b0731) by Khoa Nguyen (https://sketchfab.com/ngdkh) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

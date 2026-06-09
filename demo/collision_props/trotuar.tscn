@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://la8ht67h46u1"]
+
+[ext_resource type="PackedScene" uid="uid://daip7jvvynkrs" path="res://props/buildings/exports/SideWalk.glb" id="1_12fwh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0h1e1"]
+size = Vector3(12.016388, 1, 2.5591125)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_x20rh"]
+height = 12.047241
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=573644067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+
+[node name="SideWalk2" parent="." unique_id=856729611 instance=ExtResource("1_12fwh")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.77241004, -1.1920929e-07, -0.21379638)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1544454105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1993866, -0.19198346, 1.2708282)
+shape = SubResource("BoxShape3D_0h1e1")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1921755603]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 5.224182, -0.24776411, -0.24260116)
+shape = SubResource("CylinderShape3D_x20rh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=550569892]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 5.224, -0.20479254, 2.748)
+shape = SubResource("CylinderShape3D_x20rh")

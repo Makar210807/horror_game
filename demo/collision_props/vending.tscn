@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c0q7txtrksgoi"]
+
+[ext_resource type="PackedScene" uid="uid://diotnokg7omcn" path="res://props/vending_machine_psx/scene.gltf" id="1_ciqdj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_euino"]
+size = Vector3(1.016571, 2.2682495, 1)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=9671943]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1416556762 instance=ExtResource("1_ciqdj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7654902, 0, 1.0309141)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=708144886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7646127, 0.6565857, 0.9406426)
+shape = SubResource("BoxShape3D_euino")

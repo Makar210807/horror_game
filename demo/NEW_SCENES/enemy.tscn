@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bvlmqyh50hito"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vhi3l"]
+albedo_color = Color(1, 0.22000003, 0.22000003, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vhi3l"]
+size = Vector3(1, 2.3432617, 1)
+
+[node name="Enemy" type="Enemy" unique_id=2026285602]
+transform = Transform3D(0.4624263, 0, 0.88665503, 0, 1, 0, -0.88665503, 0, 0.4624263, 0, 3, 0)
+
+[node name="Head" type="CSGBox3D" parent="." unique_id=1649561903]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025252469, 0.25, 0.15484609)
+use_collision = true
+size = Vector3(0.49310303, 0.5, 0.5633545)
+material = SubResource("StandardMaterial3D_vhi3l")
+
+[node name="Body" type="CSGCylinder3D" parent="." unique_id=338658625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.042041782, -0.4870062, 0.14394335)
+use_collision = true
+radius = 0.39111328
+height = 0.99212646
+material = SubResource("StandardMaterial3D_vhi3l")
+
+[node name="r_hand" type="CSGCylinder3D" parent="." unique_id=848015403]
+transform = Transform3D(0.26723838, 0.4041968, 0.87476206, 0, 0.9077775, -0.4194521, -0.96363044, 0.11209366, 0.24259296, -0.19301058, -0.49724007, -0.3700778)
+use_collision = true
+radius = 0.09716797
+height = 0.9477539
+material = SubResource("StandardMaterial3D_vhi3l")
+
+[node name="l_hand" type="CSGCylinder3D" parent="." unique_id=1458614333]
+transform = Transform3D(-0.02089125, -0.4841022, 0.87476206, 0.4675399, -0.7781172, -0.4194521, 0.88372505, 0.40022326, 0.24259296, -0.18189889, -0.4953655, 0.7874581)
+use_collision = true
+radius = 0.09716797
+height = 0.9477539
+material = SubResource("StandardMaterial3D_vhi3l")
+
+[node name="r_leg" type="CSGCylinder3D" parent="." unique_id=1808930780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08395636, -1.6738011, -0.07362476)
+use_collision = true
+radius = 0.17236328
+height = 1.3408203
+material = SubResource("StandardMaterial3D_vhi3l")
+
+[node name="l_leg" type="CSGCylinder3D" parent="." unique_id=1243866621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08, -1.674, 0.4)
+use_collision = true
+radius = 0.17236328
+height = 1.3408203
+material = SubResource("StandardMaterial3D_vhi3l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=525262863]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22768295, -0.7553396, 0.21884215)
+shape = SubResource("BoxShape3D_vhi3l")

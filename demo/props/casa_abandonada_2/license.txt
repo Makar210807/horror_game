@@ -1,0 +1,11 @@
+Model Information:
+* title:	Casa Abandonada 2
+* source:	https://sketchfab.com/3d-models/casa-abandonada-2-4693205b30fe48b9ae9e79a70fa946aa
+* author:	Elbolillo (https://sketchfab.com/Elbolilloduro)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Casa Abandonada 2" (https://sketchfab.com/3d-models/casa-abandonada-2-4693205b30fe48b9ae9e79a70fa946aa) by Elbolillo (https://sketchfab.com/Elbolilloduro) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

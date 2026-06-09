@@ -1,0 +1,11 @@
+Model Information:
+* title:	Soviet concrete fence
+* source:	https://sketchfab.com/3d-models/soviet-concrete-fence-b3d5462bf978428d984cb55f27408434
+* author:	eugeen (https://sketchfab.com/eugeen)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Soviet concrete fence" (https://sketchfab.com/3d-models/soviet-concrete-fence-b3d5462bf978428d984cb55f27408434) by eugeen (https://sketchfab.com/eugeen) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

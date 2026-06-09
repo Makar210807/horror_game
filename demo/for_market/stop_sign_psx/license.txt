@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stop Sign PSX
+* source:	https://sketchfab.com/3d-models/stop-sign-psx-4755443bd1884c5394e3eae1f8fb4019
+* author:	raydev (https://sketchfab.com/raydevv)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stop Sign PSX" (https://sketchfab.com/3d-models/stop-sign-psx-4755443bd1884c5394e3eae1f8fb4019) by raydev (https://sketchfab.com/raydevv) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

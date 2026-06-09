@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dnkglkp11731r"]
+
+[ext_resource type="Script" uid="uid://ckwddyx31ntxy" path="res://quest_manager.gd" id="1_y361u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y361u"]
+font_size = 10
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="QuestUI" type="CanvasLayer" unique_id=916852176]
+script = ExtResource("1_y361u")
+
+[node name="QuestLabel" type="Label" parent="." unique_id=1494104951]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+label_settings = SubResource("LabelSettings_y361u")
+horizontal_alignment = 2

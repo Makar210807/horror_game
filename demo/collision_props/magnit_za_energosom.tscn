@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://d0oibfpa5pkn5"]
+
+[ext_resource type="PackedScene" uid="uid://bcfgmxwuqiw37" path="res://props/brick_shop_building__lowpoly/scene.gltf" id="1_p6dsx"]
+[ext_resource type="Texture2D" uid="uid://dldba1xyd2sgr" path="res://props/magnet_and_cosmetics_magnet_shop/textures/magnit7_baseColor.jpeg" id="2_sktk0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ya7uj"]
+resource_name = "magnit7"
+cull_mode = 2
+albedo_texture = ExtResource("2_sktk0")
+roughness = 0.6
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7jhkw"]
+_surfaces = [{
+"aabb": AABB(1.651431, 0.7290969, 5.587586, 1e-05, 9.755234, 2.6447463),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0),
+"name": "magnit7",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ra67e"]
+resource_name = "Sketchfab_Scene_magnit7-material"
+_surfaces = [{
+"aabb": AABB(1.651431, 0.7290969, 5.587586, 1e-05, 9.755234, 2.6447463),
+"attribute_data": PackedByteArray(255, 255, 143, 127, 68, 128, 143, 127, 68, 128, 254, 255, 255, 255, 255, 255),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0),
+"material": SubResource("StandardMaterial3D_ya7uj"),
+"name": "magnit7",
+"primitive": 3,
+"uv_scale": Vector4(1.9958172, 1.9951402, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 255, 255, 0, 0, 170, 42, 0, 0, 0, 0, 0, 0, 170, 42, 0, 0, 0, 0, 255, 255, 170, 42, 0, 0, 255, 255, 255, 255, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7jhkw")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_haiqk"]
+size = Vector3(16.74881, 9.433105, 12.92926)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nu5sn"]
+size = Vector3(5.6946754, 9.433105, 0.7059479)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_car35"]
+size = Vector3(1.0079823, 9.433105, 1.014595)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ov4mr"]
+height = 4.2370605
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=129217023]
+
+[node name="Sketchfab_Scene" parent="." unique_id=167386159 instance=ExtResource("1_p6dsx")]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 0, 0, 0)
+
+[node name="magnit7-material" type="MeshInstance3D" parent="." unique_id=524987922]
+transform = Transform3D(-3.934025e-08, 0.9, 3.934025e-08, 0, -3.934025e-08, 0.9, 0.9, 3.934025e-08, 1.7196169e-15, -5.0277557, 0.06954026, 5.573048)
+mesh = SubResource("ArrayMesh_ra67e")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=41319240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.016159058, 4.2165527, -0.43032837)
+shape = SubResource("BoxShape3D_haiqk")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=342520208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3345394, 4.2165527, 6.2388916)
+shape = SubResource("BoxShape3D_nu5sn")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=1683391242]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.197182, 4.2165527, 6.2388916)
+shape = SubResource("BoxShape3D_nu5sn")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=1292793217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1978097, 4.2165527, 6.393215)
+shape = SubResource("BoxShape3D_car35")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." unique_id=1391741421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1733322, 4.2165527, 6.393215)
+shape = SubResource("BoxShape3D_car35")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="." unique_id=2119228028]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.020629883, -0.13478267, 6.2207403)
+shape = SubResource("CapsuleShape3D_ov4mr")
